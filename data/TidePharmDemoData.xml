@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity-facade-xml type="demo">
+
+    <!--<com.tidepharm.manufacturing.MrpEvent productId="301002" eventDate="2017-04-17 00:01:00.0" mrpEventTypeId="MRP_REQUIREMENT" facilityId="WebStoreWarehouse" quantity="2" eventName="Week16, BQ20(131kg), 2"/>-->
+</entity-facade-xml>

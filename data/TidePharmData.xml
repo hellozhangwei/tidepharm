@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity-facade-xml type="seed">
+
+    <moqui.basic.EnumerationType description="MRP Event Type" enumTypeId="MrpEventType"/>
+    <moqui.basic.Enumeration enumId="REQUIRED_MRP" description="Required planning because QOH is less than minimum quantity"/>
+    <moqui.basic.Enumeration enumId="INITIAL_QOH" description="Initial QOH"/>
+    <moqui.basic.Enumeration enumId="MRP_REQUIREMENT" description="Mrp requirement"/>
+    <moqui.basic.Enumeration enumId="MANUF_ORDER_RECP" description="Manufacturing Order receipt"/>
+    <moqui.basic.Enumeration enumId="MANUF_ORDER_REQ" description="Manufacturing Order requirement"/>
+    <moqui.basic.Enumeration enumId="PROP_MANUF_O_RECP" description="Proposed Manufacturing Order receipt"/>
+    <moqui.basic.Enumeration enumId="PUR_ORDER_RECP" description="Purchase Order receipt"/>
+    <moqui.basic.Enumeration enumId="PROD_REQ_RECP" description="Product Requirement Receipt"/>
+    <moqui.basic.Enumeration enumId="PROP_PUR_O_RECP" description="Proposed Purchase Order receipt"/>
+    <moqui.basic.Enumeration enumId="SALES_ORDER_SHIP" description="Sales order shipment"/>
+    <moqui.basic.Enumeration enumId="SALES_FORECAST" description="Sales Forecast"/>
+    <moqui.basic.Enumeration enumId="ERROR" description="Error"/>
+
+</entity-facade-xml>

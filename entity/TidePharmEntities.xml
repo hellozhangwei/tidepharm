@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/entity-definition-2.1.xsd">
+
+    <entity entity-name="MrpEvent" package="com.tidepharm.manufacturing">
+
+        <field name="mrpId" type="id" is-pk="true"/>
+        <field name="productId" type="id"/>
+        <field name="eventDate" type="date-time" is-pk="true"/>
+        <field name="mrpEventTypeEnumId" type="id" is-pk="true"/>
+        <field name="facilityId" type="id"/>
+        <field name="quantity" type="number-float"/>
+        <field name="eventName" type="text-long"/>
+        <field name="isLate" type="text-indicator"/>
+
+        <relationship type="one" fk-name="MRPEV_PROD" related="mantle.product.Product">
+            <key-map field-name="productId"/>
+        </relationship>
+        <relationship type="one" fk-name="MRPEV_TYP" related="moqui.basic.Enumeration">
+            <key-map field-name="mrpEventTypeEnumId"/>
+        </relationship>
+        <relationship type="one" fk-name="MRPEV_FAC" related="mantle.facility.Facility">
+            <key-map field-name="facilityId"/>
+        </relationship>
+    </entity>
+
+</entities>
